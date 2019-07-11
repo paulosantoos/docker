@@ -1,6 +1,6 @@
 FROM debian:9
 
-LABEL author="Paulo Henrique dos Santos"
+LABEL author="Helisandro Krepel"
 LABEL maintainer="Paulo Henrique dos Santos <paulo.santos@fh.com.br>"
 
 ## Arguments 
