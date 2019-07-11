@@ -1,0 +1,9 @@
+**.tar
+**/.vscode
+**/docker.tar.gz
+**/hybris/cbc/bashrc.txt
+**/hybris/cbc/hybris-latest.zip
+**/hybris/cbc/hybris.sh
+**/java-jdk-8-linux-x64.tar.gz
+**/hybris/cbc/mysql-connector-java-5.1.47.jar
+**/hybris/cbc/ssh_keys/
