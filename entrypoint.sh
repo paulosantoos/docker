@@ -66,7 +66,7 @@ set_git(){
     echo -e "Host bitbucket.fh.com.br\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
     
     git init >> "$LOG_FILE"
-    git remote add origin ssh://git@bitbucket.fh.com.br:7999/clcc/hybris-custom.git
+    git remote add origin <repos_url>
     echo "`date +%d'/'%m'/'%Y' - '%H':'%M':'%S` - Adding repos clcc" >> "$LOG_FILE"
     git fetch origin $BRANCH_NAME:$BRANCH_NAME >> "$LOG_FILE"
     git checkout $BRANCH_NAME
@@ -93,14 +93,14 @@ copy_ssh_keys(){
 
 run_grunt(){
     echo "`date +%d'/'%m'/'%Y' - '%H':'%M':'%S` - Installing Grunt" >> "$LOG_FILE"
-    cd $HYBRIS_DIR_CUSTOM/hybris/bin/custom/cec/cecstorefront/web
+    cd $HYBRIS_DIR_CUSTOM/hybris/bin/custom/storefront/web
     sudo npm install -g grunt >> "$LOG_FILE"
     # grunt >> "$LOG_FILE"
 }
 
 run_npm(){
     echo "`date +%d'/'%m'/'%Y' - '%H':'%M':'%S` - Running Npm" >> "$LOG_FILE"
-    cd $HYBRIS_DIR_CUSTOM/hybris/bin/custom/cec/cecstorefront/web
+    cd $HYBRIS_DIR_CUSTOM/hybris/bin/custom/storefront/web
     npm i >> "$LOG_FILE"
     npm run start >> "$LOG_FILE"
 }
