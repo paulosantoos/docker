@@ -63,7 +63,7 @@ set_git(){
     git config --global merge.ff false
     git config --global http.sslVerify false
     
-    echo -e "Host bitbucket.fh.com.br\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+    
     
     git init >> "$LOG_FILE"
     git remote add origin <repos_url>
